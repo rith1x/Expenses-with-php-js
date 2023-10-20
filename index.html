@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#041C32">
+  <title>Expense Tracker</title>
+  <script src="https://kit.fontawesome.com/2f69883659.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link id="stylesheet" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <!--   <div class="foot">
+    <span class="home"><i id="icox" class="fa-solid fa-house"></i></span> -->
+  <a href="" id="link">
+    <div class="add"><i id="icox" class="fa-solid fa-circle-plus"></i>
+    </div>
+  </a>
+  <!--     <span class="none"><i id="icox" class="fa-solid fa-bars"></i></span>
+  </div> -->
+
+
+  <div class="top">
+    <div class="miku">
+      <h4> <i id="wallet" class="fa-solid fa-wallet"></i>Your Balance</h4>
+      <h1 id="balance">0.00</h1>
+    </div>
+    <center>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">
+            +0.00
+          </p>
+        </div>
+        <div>
+
+
+          <h4>Expense</h4>
+
+          <p id="money-minus" class="money-minus">
+            -0.00
+          </p>
+        </div>
+      </div>
+    </center>
+    <h3>History</h3>
+
+    <center>
+      <ul id="list" class="list">
+       
+      </ul>
+    </center>
+  </div>
+  <div class="boxentry" id="info" style="display: none;">
+
+    <h3>Add New Expenditure</h3>
+    <form id="form">
+      <div class="form-control">
+        <label for="text">Text</label>
+        <input type="text" id="text" placeholder="Enter Text..." />
+      </div>
+      <div class="form-control">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount...">
+      </div>
+      <div class="form-control">
+        <div class="rad">
+          <input type="radio" id="option1" name="options" value="+">
+          <label class="rll" for="option1">Income</label>
+
+          <input type="radio" id="option2" name="options" value="-" onclick="addMinus()">
+          <label class="rll" for="option2">Expense</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="date">Enter Date</label><br>
+        <input id="date" class="date" type="date">
+      </div>
+      <button class="btn" id="btn">Add Expenditure</button>
+    </form>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
